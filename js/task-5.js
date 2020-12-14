@@ -8,13 +8,13 @@ const products = [
 const getAllPropValues = function (arr, prop) {
   let result = [];
   for (let i = 0; i < arr.length; i += 1) {
-    result.push(arr[i][prop]);
+    result.push(arr[i][prop]);   
   }
   return result;
 };
 
-console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
+console.log(getAllPropValues(products,'name')); 
 
-console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
+console.log(getAllPropValues(products,'quantity')); 
 
-console.log(getAllPropValues(products, 'category')); // []
+console.log(getAllPropValues(products,'category')); 
